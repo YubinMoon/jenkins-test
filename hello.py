@@ -1,5 +1,3 @@
-print("hello jenkins")
-print("test")
-print("terry")
-# asdfsdf
-print("devlop")
+import sys
+
+print(sys.argv)
