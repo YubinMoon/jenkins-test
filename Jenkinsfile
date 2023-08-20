@@ -1,8 +1,8 @@
 pipeline {
     agent { docker "python:3.10" }
     environment { 
-        USERNAME = credential("USERNAME")
-        PASSWORD = credential("PASSWORD")
+        USERNAME = credentials("USERNAME")
+        PASSWORD = credentials("PASSWORD")
     }
     stages {
         stage("run") {
